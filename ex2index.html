@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Constant Variable Example</title>
+  </head>
+  <body>
+    <script>
+      const pi = 3.14159;
+      document.write("<h1>Value of pi: " + pi + "</h1>");
+      try {
+        pi = 3.14;
+      } catch (error) {
+        document.write("<h2>Error: " + error.message + "</h2>");
+      }
+    </script>
+  </body>
+</html>

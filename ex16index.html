@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculate Total and Average Marks</title>
+  </head>
+  <body>
+    <h1>Enter Marks for 10th Grade Subjects</h1>
+    <script>
+      let tamil = 75;
+      let english = 80;
+      let maths = 90;
+      let science = 85;
+      let social = 88;
+      let totalMarks = tamil + english + maths + science + social;
+      let averageMarks = totalMarks / 5;
+      document.write("<p>Tamil Marks: " + tamil + "</p>");
+      document.write("<p>English Marks: " + english + "</p>");
+      document.write("<p>Maths Marks: " + maths + "</p>");
+      document.write("<p>Science Marks: " + science + "</p>");
+      document.write("<p>Social Marks: " + social + "</p>");
+      document.write("<p><strong>Total Marks: " + totalMarks + "</strong></p>");
+      document.write(
+        "<p><strong>Average Marks: " + averageMarks.toFixed(2) + "</strong></p>"
+      );
+    </script>
+  </body>
+</html>

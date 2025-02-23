@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array Operations</title>
+  </head>
+  <body>
+    <script>
+      let fruits = ["Apple", "Banana", "Cherry", "Mango", "Orange"];
+      document.write("<h2>Initial Array: " + fruits.join(", ") + "</h2>");
+      document.write("<h3>First Element: " + fruits[0] + "</h3>");
+      document.write(
+        "<h3>Last Element: " + fruits[fruits.length - 1] + "</h3>"
+      );
+      fruits.push("Pineapple");
+      document.write(
+        "<h3>Array after push (added Pineapple): " + fruits.join(", ") + "</h3>"
+      );
+      let removedFruit = fruits.pop();
+      document.write(
+        "<h3>Array after pop (removed " +
+          removedFruit +
+          "): " +
+          fruits.join(", ") +
+          "</h3>"
+      );
+      fruits.unshift("Grapes");
+      document.write(
+        "<h3>Array after unshift (added Grapes to the start): " +
+          fruits.join(", ") +
+          "</h3>"
+      );
+      let shiftedFruit = fruits.shift();
+      document.write(
+        "<h3>Array after shift (removed " +
+          shiftedFruit +
+          "): " +
+          fruits.join(", ") +
+          "</h3>"
+      );
+      fruits[2] = "Kiwi";
+      document.write(
+        "<h3>Array after updating index 2: " + fruits.join(", ") + "</h3>"
+      );
+      let index = fruits.indexOf("Mango");
+      document.write("<h3>Index of Mango: " + index + "</h3>");
+      let removedItem = fruits.splice(index, 1);
+      document.write(
+        "<h3>Array after splice (removed " +
+          removedItem +
+          "): " +
+          fruits.join(", ") +
+          "</h3>"
+      );
+      document.write("<h3>Looping through the array:</h3>");
+      for (let i = 0; i < fruits.length; i++) {
+        document.write("<p>Fruit " + (i + 1) + ": " + fruits[i] + "</p>");
+      }
+    </script>
+  </body>
+</html>
